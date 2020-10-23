@@ -10,7 +10,8 @@
 
     <properties>
         <sparkVersion>3.0.0</sparkVersion>
-        <postgresVersion>42.2.2</postgresVersion>
+<!--        <postgresVersion>42.2.2</postgresVersion>-->
+        <mysqlVersion>8.0.15</mysqlVersion>
         <cassandraConnectorVersion>3.0.0-alpha2</cassandraConnectorVersion>
         <akkaVersion>2.5.24</akkaVersion>
         <akkaHttpVersion>10.1.7</akkaHttpVersion>
@@ -58,10 +59,15 @@
             <artifactId>spark-cassandra-connector_2.12</artifactId>
             <version>${cassandraConnectorVersion}</version>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.postgresql</groupId>-->
+<!--            <artifactId>postgresql</artifactId>-->
+<!--            <version>${postgresVersion}</version>-->
+<!--        </dependency>-->
         <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <version>${postgresVersion}</version>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysqlVersion}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>

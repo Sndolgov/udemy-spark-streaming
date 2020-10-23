@@ -3,7 +3,8 @@ package part1recap
 import scala.concurrent.Future
 import scala.util.{Failure, Success}
 
-object ScalaRecap extends App {
+object ScalaRecap// extends App
+{
 
   // values and variables
   val aBoolean: Boolean = false
@@ -55,6 +56,8 @@ object ScalaRecap extends App {
     case 2 => "second"
     case _ => "unknown"
   }
+
+
 
   // try-catch
   try {
